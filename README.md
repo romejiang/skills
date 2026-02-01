@@ -1,0 +1,145 @@
+# Stephen 的技能库
+
+一个为 AI 编程助手（如 Claude Code、Cursor 等）设计的个人技能集合，帮助提升日常开发和创作效率。
+
+## 什么是技能（Skill）？
+
+技能是一种预定义的指令集，用于扩展 AI 编程助手的能力边界。每个技能专注于解决特定类型的任务，通过标准化的输入输出，让复杂操作变得简单可控。
+
+你可以将技能理解为 AI 的"瑞士军刀"——每把刀都有特定用途，组合使用时威力更大。
+
+## 技能库特点
+
+- **📦 开箱即用**：每个技能都经过精心设计，无需额外配置即可使用
+- **🔧 高度可定制**：支持通过 `EXTEND.md` 文件进行个性化配置
+- **🌐 中文优先**：所有技能默认支持中文，符合本土化使用习惯
+- **📖 文档完善**：每个技能都有详细的使用说明和示例
+
+## 快速开始
+
+### 安装
+
+将此仓库克隆到你的工作目录或全局技能目录：
+
+```bash
+# 克隆到当前项目
+git clone https://github.com/romejiang/skills.git .skills
+
+# 或克隆到全局目录
+git clone https://github.com/romejiang/skills.git ~/.skills
+```
+
+### 使用方式
+
+在支持技能的 AI 编程助手中，使用斜杠命令调用技能：
+
+```bash
+# 基本用法
+/技能名称 参数1 参数2
+
+# 带选项的用法
+/技能名称 参数 --选项1 值1 --选项2 值2
+```
+
+## 技能列表
+
+> 🚧 **建设中**：正在持续添加新技能，敬请期待！
+
+### 内容创作类
+
+*即将推出...*
+
+### 开发工具类
+
+*即将推出...*
+
+### 数据处理类
+
+*即将推出...*
+
+### 自动化类
+
+*即将推出...*
+
+## 目录结构
+
+```
+skills/
+├── README.md              # 本文件
+├── skills/                # 技能目录
+│   └── (具体技能文件)
+└── .stephen-skills/       # 配置目录（可选）
+    └── .env               # 环境变量配置
+```
+
+## 环境配置
+
+部分技能可能需要 API 密钥或其他配置。可以通过 `.env` 文件进行设置：
+
+**配置文件位置**（按优先级从高到低）：
+
+1. 命令行环境变量
+2. 系统环境变量
+3. 项目级配置：`.stephen-skills/.env`
+4. 用户级配置：`~/.stephen-skills/.env`
+
+**配置示例**：
+
+```bash
+# 创建配置目录
+mkdir -p ~/.stephen-skills
+
+# 创建配置文件
+cat > ~/.stephen-skills/.env << 'EOF'
+# API 配置示例
+# OPENAI_API_KEY=sk-xxx
+# GOOGLE_API_KEY=xxx
+
+# 其他配置
+# DEFAULT_LANGUAGE=zh
+EOF
+```
+
+## 自定义扩展
+
+每个技能都支持通过 `EXTEND.md` 文件进行自定义配置，可以覆盖默认设置或添加个人偏好。
+
+**扩展文件位置**：
+
+1. 项目级：`.stephen-skills/<技能名称>/EXTEND.md`
+2. 用户级：`~/.stephen-skills/<技能名称>/EXTEND.md`
+
+**示例**：
+
+```markdown
+## 自定义配置
+
+### 输出偏好
+- 默认语言：中文
+- 输出格式：Markdown
+- 详细程度：精简
+```
+
+## 贡献指南
+
+欢迎提交 Issue 或 Pull Request！
+
+1. Fork 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/amazing-skill`)
+3. 提交你的更改 (`git commit -m '添加一个很棒的技能'`)
+4. 推送到分支 (`git push origin feature/amazing-skill`)
+5. 提交 Pull Request
+
+## 致谢
+
+- 感谢 [宝玉](https://github.com/JimLiu) 的 [baoyu-skills](https://github.com/JimLiu/baoyu-skills) 项目提供的灵感
+
+## 许可证
+
+MIT
+
+---
+
+<p align="center">
+  <i>持续更新中，欢迎 Star ⭐</i>
+</p>
