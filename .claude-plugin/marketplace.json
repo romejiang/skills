@@ -1,0 +1,22 @@
+{
+    "name": "stephen-skills",
+    "owner": {
+        "name": "Stephen",
+        "email": "romejiang@gmail.com"
+    },
+    "metadata": {
+        "description": "Stephen 的个人技能库，提升日常开发和创作效率",
+        "version": "0.1.0"
+    },
+    "plugins": [
+        {
+            "name": "investment-skills",
+            "description": "投资分析相关技能",
+            "source": "./",
+            "strict": false,
+            "skills": [
+                "./skills/guoxue"
+            ]
+        }
+    ]
+}
