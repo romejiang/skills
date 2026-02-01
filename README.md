@@ -1,4 +1,4 @@
-# Stephen 的技能库
+# romejiang 的技能库
 
 一个为 AI 编程助手（如 Claude Code、Cursor 等）设计的个人技能集合，帮助提升日常开发和创作效率。
 

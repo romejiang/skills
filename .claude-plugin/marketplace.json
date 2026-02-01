@@ -1,11 +1,11 @@
 {
-    "name": "stephen-skills",
+    "name": "romejiang-skills",
     "owner": {
-        "name": "Stephen",
+        "name": "romejiang",
         "email": "romejiang@gmail.com"
     },
     "metadata": {
-        "description": "Stephen 的个人技能库，提升日常开发和创作效率",
+        "description": "romejiang 的个人技能库，提升日常开发和创作效率",
         "version": "0.1.0"
     },
     "plugins": [
